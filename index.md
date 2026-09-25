@@ -19,6 +19,8 @@ If you use FairOwe Pro, you can explicitly export one group as a CSV file. The f
 
 FairOwe offers optional Google Analytics for Firebase app-usage measurement and Firebase Crashlytics reliability monitoring and crash diagnosis. Both are off by default. You can enable or disable them at any time in FairOwe’s Settings screen. When enabled, these services may process app interaction events, crash stack traces, relevant app state and device metadata, app version, and per-installation identifiers. Turning diagnostics off first stores your disabled choice and pending cleanup state, then stops future collection, resets local Analytics data, and requests deletion of unsent crash reports. Unfinished cleanup retries on a later app start and remains pending until the SDK confirms that no unsent report remains. Delayed cleanup results are ignored if you re-enable diagnostics or begin a newer cleanup request. Google may retain data already received under its published retention terms.
 
+When optional Analytics is enabled, Google may derive approximate location from a masked IP address and automatically log app-use and in-app purchase events. FairOwe does not request Android location access or send precise device location to Analytics.
+
 FairOwe does not attach group names, member names, expense descriptions, notes, amounts, RevenueCat customer identifiers, or other user-entered expense content to analytics events or crash reports. Personalized advertising signals are disabled. Advertising ID and Android ad-services identifier permissions are removed from the app.
 
 Firebase data is encrypted in transit. Google’s current Firebase privacy and retention information is available at [Firebase Privacy and Security](https://firebase.google.com/support/privacy).
