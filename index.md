@@ -17,7 +17,7 @@ If you use FairOwe Pro, you can explicitly export one group as a CSV file. The f
 
 ## 2. Analytics and crash diagnostics
 
-FairOwe offers optional Google Analytics for Firebase app-usage measurement and Firebase Crashlytics reliability monitoring and crash diagnosis. Both are off by default. You can enable or disable them at any time in FairOwe’s About screen. When enabled, these services may process app interaction events, crash stack traces, relevant app state and device metadata, app version, and per-installation identifiers. Turning diagnostics off first stores your disabled choice and pending cleanup state, then stops future collection, resets local Analytics data, and requests deletion of unsent crash reports. Unfinished cleanup retries on a later app start and remains pending until the SDK confirms that no unsent report remains. Delayed cleanup results are ignored if you re-enable diagnostics or begin a newer cleanup request. Google may retain data already received under its published retention terms.
+FairOwe offers optional Google Analytics for Firebase app-usage measurement and Firebase Crashlytics reliability monitoring and crash diagnosis. Both are off by default. You can enable or disable them at any time in FairOwe’s Settings screen. When enabled, these services may process app interaction events, crash stack traces, relevant app state and device metadata, app version, and per-installation identifiers. Turning diagnostics off first stores your disabled choice and pending cleanup state, then stops future collection, resets local Analytics data, and requests deletion of unsent crash reports. Unfinished cleanup retries on a later app start and remains pending until the SDK confirms that no unsent report remains. Delayed cleanup results are ignored if you re-enable diagnostics or begin a newer cleanup request. Google may retain data already received under its published retention terms.
 
 FairOwe does not attach group names, member names, expense descriptions, notes, amounts, RevenueCat customer identifiers, or other user-entered expense content to analytics events or crash reports. Personalized advertising signals are disabled. Advertising ID and Android ad-services identifier permissions are removed from the app.
 
@@ -28,17 +28,17 @@ Firebase data is encrypted in transit. Google’s current Firebase privacy and r
 FairOwe may offer:
 
 - **FairOwe Pro**, a one-time non-consumable purchase that unlocks unlimited active groups and per-group CSV export while the dedicated Pro entitlement is active.
-- **Student Developer Support**, optional repeatable consumable purchases at locally displayed store prices corresponding to US $1, $10, and $100 tiers. These purchases support the developer and may trigger a one-use in-app thank-you celebration. They do not unlock Pro, another paid feature, a badge, or a lasting entitlement. They are not charitable donations and are not tax-deductible.
+- **Student Developer Support**, three optional repeatable consumable tiers with prices localized by Google Play. Each completed, verified purchase adds exactly one local Support Spark. You may redeem one Spark for a one-use in-app thank-you celebration. Support purchases do not unlock Pro, another paid feature, a badge, or a lasting entitlement. They are not charitable donations and are not tax-deductible.
 
 Purchases are processed by Google Play and RevenueCat. They may process purchase history, transaction information, device and installation information, and an automatically generated anonymous App User ID. FairOwe does not receive or store full payment-card details and does not send RevenueCat your expense records, name, email address, advertising ID, or custom customer attributes.
 
-Pending, canceled, failed, mismatched, unverified, refunded, or replayed transactions do not unlock paid access or create a new support acknowledgement. Pro can be restored where Google Play and RevenueCat verify the dedicated entitlement. Consumed support purchases are not restored as owned content.
+Pending, canceled, failed, mismatched, unverified, refunded, or replayed transactions do not unlock paid access or create a new Support Spark. Pro can be restored where Google Play and RevenueCat verify the dedicated entitlement. Consumed support purchases are not restored as owned content.
 
 ## 4. Storage and retention
 
-Local expense data remains in FairOwe until you delete the relevant record, clear the app’s storage, or uninstall the app. Android backup is disabled for FairOwe, so clearing storage or uninstalling can permanently remove local records and unredeemed acknowledgements.
+Local expense data remains in FairOwe until you delete the relevant record, clear the app’s storage, or uninstall the app. Android backup is disabled for FairOwe, so clearing storage or uninstalling can permanently remove local records and unredeemed Support Sparks.
 
-FairOwe stores only hashed purchase-correlation values needed to prevent duplicate support acknowledgements; it does not persist raw Google Play purchase tokens, order identifiers, or RevenueCat transaction identifiers. Temporary CSV exports are cleaned up by age and count limits.
+FairOwe stores only hashed purchase-correlation values needed to prevent duplicate Support Sparks; it does not persist raw Google Play purchase tokens, order identifiers, or RevenueCat transaction identifiers. Temporary CSV exports are cleaned up by age and count limits.
 
 RevenueCat, Google Play, Firebase Analytics, and Firebase Crashlytics retain service data under their respective terms and retention policies.
 
@@ -46,7 +46,7 @@ RevenueCat, Google Play, Firebase Analytics, and Firebase Crashlytics retain ser
 
 You can delete expenses, settlements, and groups inside FairOwe. To remove all local FairOwe data, use Android **Settings → Apps → FairOwe → Storage → Clear storage**, or uninstall the app.
 
-For a privacy or deletion request concerning RevenueCat purchase records, email **developer@blackandblue.co.in** with the subject **FairOwe privacy request**. Include the anonymous RevenueCat Support ID shown in FairOwe’s About screen if available. Do not send purchase tokens, order identifiers, payment-card details, or other sensitive information. Google may retain transaction records where required for security, accounting, or legal obligations.
+For a privacy or deletion request concerning RevenueCat purchase records, email **developer@blackandblue.co.in** with the subject **FairOwe privacy request**. Include the anonymous RevenueCat Support ID shown in FairOwe’s Settings screen if available. Do not send purchase tokens, order identifiers, payment-card details, or other sensitive information. Google may retain transaction records where required for security, accounting, or legal obligations.
 
 ## 6. Permissions
 
