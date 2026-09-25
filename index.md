@@ -1,6 +1,6 @@
 # Privacy Policy for FairOwe
 
-**Effective date:** September 24, 2026  
+**Effective date:** September 26, 2026  
 **Developer:** Black and Blue
 
 FairOwe is an Android expense-sharing and settlement app published by Black and Blue (“FairOwe,” “we,” “us,” or “our”). This policy explains what the app processes, what may leave your device, and the choices available to you.
